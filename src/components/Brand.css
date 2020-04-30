@@ -1,0 +1,14 @@
+
+.App-logo {
+    height: 10vmin;
+    pointer-events: none;
+}
+
+.brand {
+    height: 10vmin;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    
+}
