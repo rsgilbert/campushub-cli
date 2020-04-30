@@ -1,0 +1,8 @@
+.item-images {
+    margin: auto auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-basis: inherit;
+    overflow: scroll;
+}

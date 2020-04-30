@@ -8,8 +8,7 @@ import AppTitle from "./AppTitle";
 const Brand = (props) => {
     return (
         <div className="brand">
-            <img src={logo} className="App-logo" alt="logo" />
-            
+            <img src={logo} className="App-logo" alt="logo" /> 
             <AppTitle />
         </div>
     )

@@ -5,8 +5,8 @@ import Main from "./Main";
 const Home = (props) => {
   return (
     <div>
-        <Header />
-        <Main />
+      <Header />
+      <Main />
     </div>
   );
 };

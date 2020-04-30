@@ -1,0 +1,6 @@
+.item-image {
+    height: 30vmin;
+    width: 30vmin;
+    border: 1px solid green;
+    margin: 4px;
+}

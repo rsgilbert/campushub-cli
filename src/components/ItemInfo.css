@@ -1,0 +1,16 @@
+.item-info {
+    display: flex;
+    flex-direction: column;
+    border: 1px white solid;
+    margin: auto 16px;
+}
+
+.item-name {
+    font-weight: bold;
+    font-size: larger;
+}
+
+.item-price {
+   color: darkmagenta;
+   font-size: large;
+}

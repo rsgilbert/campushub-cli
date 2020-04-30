@@ -1,0 +1,17 @@
+.buy-info {
+    display: flex;
+    flex-direction: row;
+    border: 1px white solid;
+    margin: auto 32px;
+    justify-content: space-between;
+}
+
+.item-name {
+    font-weight: bold;
+    font-size: larger;
+}
+
+.item-price {
+   color: darkmagenta;
+   font-size: large;
+}
