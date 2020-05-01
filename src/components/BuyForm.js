@@ -2,14 +2,44 @@ import React from 'react'
 import './BuyForm.css'
 import { useState } from 'react'
 
+const serverUrlLaptop = "http://localhost:5000";
+const serverUrlPhone = "http://10.0.2.2:5000"
+const serverUrl = serverUrlLaptop
+const ordersUrl = serverUrl + "/orders";
 
-const BuyForm = () => {
+const BuyForm = ({ itemId }) => {
     const [hall, setHall] = useState('')
     const [phoneNumber, setPhoneNumber] = useState('')
+    const [error, setError] = useState(null);
+    const [isPosted, setIsPosted] = useState(false);
 
+
+    // post order 
     const handleSubmit = e => {
         e.preventDefault()
-        console.log(hall + " " + phoneNumber)
+        const payload = { hall, phoneNumber, itemId }
+        fetch(ordersUrl, {
+            method: 'POST',
+            // the headers are very important, do not miss them
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(payload)
+        })
+        .then(res => res.json())
+        .then(
+            (result) => {
+              setIsPosted(true);
+              alert("Complete!")
+              console.log(result)
+            },
+            // Note: it's important to handle errors here
+            // instead of catch() block so that we do not swallow
+            // exceptions from actual bugs in components.
+            (error) => {
+              setIsPosted(true)
+              setError(error);
+              alert("Not sent")
+            }
+          );
     } 
 
     const handlePhoneNumberChange = event => {
@@ -54,8 +84,6 @@ const BuyForm = () => {
             </form>
         </div>
     )
-
-
 }
 
 

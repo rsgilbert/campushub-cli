@@ -5,6 +5,10 @@
     pointer-events: none;
 }
 
+.brand-link {
+    text-decoration: none;
+}
+
 .brand {
     height: 10vmin;
     display: flex;

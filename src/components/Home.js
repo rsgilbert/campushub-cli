@@ -1,14 +1,12 @@
 import React from "react";
-import Header from "./Header";
-import Main from "./Main";
+import ItemList from "./ItemList";
+
 
 const Home = (props) => {
   return (
-    <div>
-      <Header />
-      <Main />
-    </div>
+    <ItemList /> 
   );
 };
+
 
 export default Home;
