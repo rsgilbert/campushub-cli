@@ -4,6 +4,7 @@ import Header from "./Header";
 import ProductImages from './ItemImages'
 import BuyInfo from './BuyInfo'
 import BuyTitle from './BuyTitle'
+import BuyForm from './BuyForm';
 
 
 const Buy = () => {
@@ -12,7 +13,7 @@ const Buy = () => {
             <Header />
             <ProductImages images={item.pictures} />
             <BuyInfo item={item}/>
-            <BuyTitle />
+            <BuyForm />
         </>
     )
 }

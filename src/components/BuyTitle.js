@@ -1,10 +1,10 @@
 import React from 'react'
-// import './BuyTitle.css'
+import './BuyTitle.css'
 
 
 const BuyTitle = () => {
     return (
-        <h2>Buy</h2>
+        <h2 className="buy-title">Buy</h2>
     )
 }
 
