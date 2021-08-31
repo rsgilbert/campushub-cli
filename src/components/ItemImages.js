@@ -6,7 +6,7 @@ import './ItemImages.css'
 const ItemImages = (props) => {
     return (
         <div className="item-images"> 
-            { props.images.map((image, idx) => 
+            { props.images && props.images.map((image, idx) => 
               <ItemImage image={ props.images[0] } key={idx} />
             )}
         </div>
